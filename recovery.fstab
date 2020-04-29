@@ -10,7 +10,7 @@
 /system_image		emmc	/dev/block/bootdevice/by-name/system		flags=backup=1;flashimg=1
 /vendor			ext4	/dev/block/bootdevice/by-name/vendor		flags=display=Vendor;backup=1;wipeingui
 /vendor_image		emmc	/dev/block/bootdevice/by-name/vendor		flags=backup=1;flashimg=1
-/data				ext4	/dev/block/bootdevice/by-name/userdata		flags=encryptable=footer;length=-16384
+/data				ext4	/dev/block/bootdevice/by-name/userdata		flags=fileencryption=ice
 
 # External storage
 /sdcard1			vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1	flags=fsflags=utf8;display=SDcard;storage;wipeingui;removable
